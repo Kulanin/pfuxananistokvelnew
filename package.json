@@ -6,15 +6,14 @@
   "engines": {
     "node": " v12.16.2"
   },
-
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build":"cd pfuxanani && npm run build",
-    "install-client":"cd pfuxanani && npm install",
-    "heroku-postbuild":"npm run install-client && npm run build",
+    "build": "cd pfuxanani && npm run build",
+    "install-client": "cd pfuxanani && npm install",
+    "heroku-postbuild": "npm run install-client && npm run build",
     "start": "node server.js",
-    "client":"cd pfuxanani && npm start",
-    "dev":"concurrently \"nodemon server.js\" \"npm run client\""
+    "client": "cd pfuxanani && npm start",
+    "dev": "concurrently \"nodemon server.js\" \"npm run client\""
   },
   "keywords": [],
   "author": "",
